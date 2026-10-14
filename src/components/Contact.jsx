@@ -1,5 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import { currentYear, profile } from '../data.js'
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6'
+import { FiMail } from 'react-icons/fi'
+import { currentYear, profile, whatsappUrl } from '../data.js'
 import { sectionReveal } from '../motion.js'
 
 function Contact() {
@@ -22,10 +24,8 @@ function Contact() {
               whileHover={reducedMotion ? undefined : { y: -2 }}
               transition={{ duration: 0.18 }}
             >
+              <FiMail size={18} aria-hidden="true" />
               Email me
-              <svg className="button-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 12l8-8M6 4h6v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
             </motion.a>
             <motion.a
               className="button button-outline"
@@ -35,10 +35,8 @@ function Contact() {
               whileHover={reducedMotion ? undefined : { y: -2 }}
               transition={{ duration: 0.18 }}
             >
+              <FaGithub size={18} aria-hidden="true" />
               GitHub
-              <svg className="button-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 12l8-8M6 4h6v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
             </motion.a>
             <motion.a
               className="button button-outline"
@@ -48,10 +46,19 @@ function Contact() {
               whileHover={reducedMotion ? undefined : { y: -2 }}
               transition={{ duration: 0.18 }}
             >
+              <FaLinkedinIn size={18} aria-hidden="true" />
               LinkedIn
-              <svg className="button-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 12l8-8M6 4h6v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+            </motion.a>
+            <motion.a
+              className="button button-outline"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={reducedMotion ? undefined : { y: -2 }}
+              transition={{ duration: 0.18 }}
+            >
+              <FaWhatsapp size={18} aria-hidden="true" />
+              WhatsApp
             </motion.a>
           </div>
         </div>

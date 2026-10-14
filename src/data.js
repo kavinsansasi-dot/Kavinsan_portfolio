@@ -9,6 +9,10 @@ export const profile = {
     'Full-stack developer specialising in the MERN stack and REST API design. I build multi-role platforms with secure authentication, payments and real-time features, and also make mobile apps with Flutter and Kotlin.',
 }
 
+export const whatsappUrl = `https://wa.me/${profile.phone.replace(/\D/g, '')}?text=${encodeURIComponent(
+  'Hi Kavinsan, I saw your portfolio and would like to talk.',
+)}`
+
 export const currentYear = new Date().getFullYear()
 
 export const projects = [

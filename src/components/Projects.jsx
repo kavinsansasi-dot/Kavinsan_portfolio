@@ -72,7 +72,10 @@ function Projects() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        View code on GitHub <span aria-hidden="true">↗</span>
+                        View code on GitHub
+                        <svg className="button-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                          <path d="M4 12l8-8M6 4h6v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </a>
                     </motion.div>
                   )}

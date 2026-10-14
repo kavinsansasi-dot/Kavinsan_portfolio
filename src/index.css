@@ -260,6 +260,12 @@ a:focus-visible {
   transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
 
+.button-arrow {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
 .button-primary {
   border-color: var(--accent);
   background: var(--accent);
@@ -784,6 +790,87 @@ a:focus-visible {
     margin-right: 3px;
   }
 
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .brand-mark {
+    flex: 0 0 auto;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+  }
+
+  .nav-links {
+    min-width: 0;
+    flex: 1 1 auto;
+    gap: 16px;
+    margin: 0 0 0 auto;
+    overflow-x: auto;
+    padding: 0 2px 0 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    min-height: 44px;
+    flex: 0 0 auto;
+    align-items: center;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding-top: 32px;
+  }
+
+  .hero-copy {
+    display: contents;
+  }
+
+  .hero .availability {
+    grid-row: 1;
+  }
+
+  .hero .hero-eyebrow {
+    grid-row: 2;
+    max-width: 100%;
+    margin-top: 14px;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+  }
+
+  .hero .hero-title {
+    grid-row: 3;
+  }
+
+  .hero .hero-aside {
+    grid-row: 4;
+    width: 100%;
+    max-width: 240px;
+    justify-self: center;
+  }
+
+  .hero .hero-rule {
+    grid-row: 5;
+  }
+
+  .hero .hero-summary {
+    grid-row: 6;
+  }
+
+  .hero .hero-actions {
+    grid-row: 7;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

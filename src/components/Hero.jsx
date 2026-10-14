@@ -73,7 +73,10 @@ function Hero() {
             transition={{ duration: reducedMotion ? 0 : 0.5, delay: entranceDelay + 0.3 }}
             whileHover={reducedMotion ? undefined : { y: -2 }}
           >
-            See my projects <span aria-hidden="true">↘</span>
+            See my projects
+            <svg className="button-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 4l8 8M6 12h6V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </motion.a>
           <motion.a
             className="button button-outline"
@@ -83,7 +86,10 @@ function Hero() {
             transition={{ duration: reducedMotion ? 0 : 0.5, delay: entranceDelay + 0.4 }}
             whileHover={reducedMotion ? undefined : { y: -2 }}
           >
-            Email me <span aria-hidden="true">↗</span>
+            Email me
+            <svg className="button-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 12l8-8M6 4h6v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </motion.a>
         </div>
       </div>

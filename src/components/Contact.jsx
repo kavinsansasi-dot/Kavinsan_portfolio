@@ -11,7 +11,7 @@ function Contact() {
     <footer className="contact-section" id="contact">
       <div className="contact-inner page-shell">
         <span className="section-number">04 — CONTACT</span>
-        <motion.h2 {...sectionReveal(reducedMotion)}>Let’s work<br /><em>together.</em></motion.h2>
+        <motion.h2 {...sectionReveal(reducedMotion)}>Let's<br /><span className="gold">connect.</span></motion.h2>
         <div className="contact-bottom">
           <div>
             <div className="contact-rule" />

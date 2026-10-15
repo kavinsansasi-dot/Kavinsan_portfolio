@@ -4,6 +4,7 @@ export const profile = {
   phone: '+94 77 2315614',
   github: 'https://github.com/kavinsansasi-dot',
   linkedin: 'https://linkedin.com/in/kavinsan-sasikumar',
+  resumeUrl: '/Kavinsan_Sasikumar_CV.pdf',
   location: 'Malabe, Colombo, Sri Lanka',
   summary:
     'Full-stack developer specialising in the MERN stack and REST API design. I build multi-role platforms with secure authentication, payments and real-time features, and also make mobile apps with Flutter and Kotlin.',
